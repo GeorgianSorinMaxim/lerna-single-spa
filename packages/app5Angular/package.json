@@ -1,4 +1,13 @@
 {
+	"name": "single-spa-portal-example-angular6-two",
+	"version": "1.0.0",
+	"description": "Angular App that will be bundled into a library to be loaded on demand by a simpleSPA Portal App",
+	"scripts": {
+	  "watch:portal": "webpack-dev-server --port 9005",
+	  "build:portal": "webpack -p --progress"
+	},
+	"author": "Michael Ruecker",
+	"license": "MIT",
 	"dependencies": {
 		"@angular-devkit/build-optimizer": "^0.6.8",
 		"@angular-devkit/core": "^0.6.6",

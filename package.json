@@ -7,6 +7,6 @@
     "update-version": "lerna publish --skip-git --skip-npm --force-publish '*'"
   },
   "devDependencies": {
-    "lerna": "^2.11.0"
+    "lerna": "^3.0.4"
   }
 }

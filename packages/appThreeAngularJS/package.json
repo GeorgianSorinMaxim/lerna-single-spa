@@ -1,5 +1,5 @@
 {
-  "name": "single-spa-portal-example-angularjs-app",
+  "name": "@singlespa/appThreeAngularJS",
   "version": "1.0.0",
   "description": "AngularJS App that will be bundled into a library to be loaded on demand by a simpleSPA Portal App",
   "scripts": {
@@ -9,10 +9,7 @@
   "author": "Michael Ruecker",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
+
     "clean-webpack-plugin": "^0.1.19",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.2"

@@ -1,6 +1,6 @@
 {
-  "name": "app4vue",
-  "version": "0.1.0",
+  "name": "@singlespa/appFourVue",
+  "version": "1.0.0",
   "scripts": {
     "watch:standalone": "vue-cli-service serve",
     "build:standalone": "vue-cli-service build",

@@ -1,5 +1,7 @@
 # single-spa-portal-example
 
+This is a mono-repo version of the original project which makes it easier to maintain and develop.
+
 The goal of this project is to provide an example of how to build a portal like app which consists of multiple single page applications (SPA's). Each SPA should be self contained with its own build process. It should be individually deployable without the need to deploy the whole application if there are changes to any individual app.
 
 This example is based on [simple-single-spa-webpack-example](https://github.com/joeldenning/simple-single-spa-webpack-example/blob/master/README.md) but will provide further features like:
@@ -21,7 +23,7 @@ This example is based on [simple-single-spa-webpack-example](https://github.com/
    - `yarn portal`
 4. Open up http://localhost:9000 in a web browser.
 
-## npm tasks
+## npm tasks (per project)
 
 `watch:portal`: Builds the app as UMD module with singleSPA as middleware to consume the app by the portal. Changes are automatically detected.
 

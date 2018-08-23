@@ -3,7 +3,7 @@ import { Provider, connect } from 'react-redux';
 import Counter from './counter';
 import reactLogo from '../assets/react-logo.png';
 
-export default class MyRoot extends React.Component {
+export default class Root extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -32,7 +32,7 @@ export default class MyRoot extends React.Component {
         </Provider>
       );
     }
-
+    // console.log(ret);
     return ret;
   }
 }

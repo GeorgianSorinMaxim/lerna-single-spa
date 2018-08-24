@@ -56,8 +56,7 @@ module.exports = {
         pathRewrite: { '^/app1': '' }
       },
       '/app2': {
-        target: 'http://localhost:9002',
-        pathRewrite: { '^/app2': '' }
+        target: 'http://localhost:9002'
       },
       '/app3': {
         target: 'http://localhost:9003',
@@ -68,8 +67,7 @@ module.exports = {
         pathRewrite: { '^/app4': '' }
       },
       '/app5': {
-        target: 'http://localhost:9005',
-        pathRewrite: { '^/app5': '' }
+        target: 'http://localhost:9005'
       }
     }
   }

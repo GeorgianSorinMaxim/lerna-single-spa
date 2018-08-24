@@ -1,10 +1,10 @@
 import angular from 'angular';
 
-angular
-    .module('app')
-    .component('root', {
-        template: `
+angular.module('app').component('root', {
+  template: `
             <div style="margin-top: 100px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/AngularJS_logo.svg"/> 
+            <br />
               This was rendered by App3 which is written in Angular 1.6
             </div>
             
@@ -13,8 +13,8 @@ angular
             
             <ui-view />
         `,
-        controllerAs: 'vm',
-        controller($timeout) {
-            const vm = this;
-        }
-    });
+  controllerAs: 'vm',
+  controller($timeout) {
+    const vm = this;
+  }
+});

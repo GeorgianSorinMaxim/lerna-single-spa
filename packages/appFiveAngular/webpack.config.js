@@ -75,7 +75,8 @@ module.exports = function (env) {
             filename: '[name].js',
             path: path.resolve(__dirname, 'release'),
             libraryTarget: 'umd',
-            library: 'app5'
+            library: 'app5',
+            publicPath: '/app5/'
         },
         module: {
             rules: [
@@ -93,15 +94,13 @@ module.exports = function (env) {
                     options: {
                         name: "[name].[ext]",
                         limit: 10000,
-                        publicPath: '/app5/'
                     }
                 },
                 {
                     test: /\.(eot|svg|cur)$/,
                     loader: "file-loader",
                     options: {
-                        name: "[name].[ext]",
-                        publicPath: '/app5/'
+                        name: "[name].[ext]"
                     }
                 },
                 {

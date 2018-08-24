@@ -1,4 +1,4 @@
-# single-spa-portal-example
+# single-spa-portal-monorepo
 
 This is a mono-repo version of the original project which makes it easier to maintain and develop.
 

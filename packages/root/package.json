@@ -1,0 +1,20 @@
+{
+  "name": "@singlespa/root",
+  "version": "0.0.1",
+  "scripts": {
+    "serve": "webpack-dev-server --port 9000",
+    "build": "webpack -p --progress"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "single-spa": "^4.0.1",
+    "systemjs": "^0.21.4",
+    "zone.js": "^0.8.26"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@singlespa/app1",
+  "version": "0.0.1",
+  "scripts": {
+    "watch:portal": "webpack-dev-server --port 9001",
+    "build:portal": "webpack -p --progress"
+  },
+  "devDependencies": {
+    "file-loader": "^1.1.11",
+    "prop-types": "^15.6.2",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "single-spa-react": "^2.8.1"
+  }
+}

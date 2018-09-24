@@ -1,5 +1,5 @@
 {
-  "name": "@singlespa/root",
+  "name": "root",
   "version": "0.0.1",
   "scripts": {
     "serve": "webpack-dev-server --port 9000",

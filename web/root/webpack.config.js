@@ -32,8 +32,7 @@ module.exports = {
     proxy: [
       {
         context: ['/app1'],
-        target: 'http://localhost:9001',
-        pathRewrite: { '^/app1': '' }
+        target: 'http://localhost:9001'
       }
     ]
   }

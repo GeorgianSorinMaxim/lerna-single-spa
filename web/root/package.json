@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "serve": "webpack serve --port 9000",
+    "serve": "webpack serve --mode development --port 9000",
     "build": "webpack --mode production"
   },
   "dependencies": {

@@ -1,51 +1,26 @@
 const path = require('path');
 
-module.exports = {
-  entry: {
-    singleSpaEntry: './src/singleSpaEntry.js'
-  },
+const cors = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+  'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
+};
 
+module.exports = {
+  entry: { singleSpaEntry: './src/singleSpaEntry.js' },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'release'),
-    libraryTarget: 'umd',
-    library: 'app1'
+    publicPath: '/app1/',
+    library: { name: 'app1', type: 'umd' },
+    clean: true
   },
-
   module: {
     rules: [
-      {
-        test: /\.js/,
-        use: ['babel-loader'],
-        exclude: /node_modules/
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              publicPath: '/app1/'
-            }
-          }
-        ]
-      }
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader', options: { rootMode: 'upward' } },
+      { test: /\.(png|jpe?g|gif)$/, type: 'asset/resource' }
     ]
   },
-
-  mode: 'development',
-
-  devtool: 'eval-source-map',
-  // devtool: 'none',
-
-  devServer: {
-    historyApiFallback: true,
-    watchOptions: { aggregateTimeout: 300, poll: 1000 },
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-      'Access-Control-Allow-Headers':
-        'X-Requested-With, content-type, Authorization'
-    }
-  }
+  devtool: 'source-map',
+  devServer: { historyApiFallback: true, headers: cors }
 };

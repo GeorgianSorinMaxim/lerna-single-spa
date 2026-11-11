@@ -1,8 +1,8 @@
-import React from 'react';
+import { Component } from 'react';
 
 import reactLogo from '../assets/react-logo.png';
 
-export default class Root extends React.Component {
+export default class Root extends Component {
   componentDidCatch(error, info) {
     console.log(error, info);
   }
@@ -10,7 +10,7 @@ export default class Root extends React.Component {
   render() {
     return (
       <div style={{ marginTop: 100 }}>
-        <img src={reactLogo} style={{ width: 100 }} /> <br />
+        <img src={reactLogo} style={{ width: 100 }} alt="React logo" /> <br />
         /app1 renders.
       </div>
     );

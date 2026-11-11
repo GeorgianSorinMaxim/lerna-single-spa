@@ -1,20 +1,16 @@
 {
   "name": "root",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "serve": "webpack-dev-server --port 9000",
-    "build": "webpack -p --progress"
-  },
-  "devDependencies": {
-    "copy-webpack-plugin": "^4.5.1",
-    "clean-webpack-plugin": "^0.1.19",
-    "webpack": "^4.18.0",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.8"
+    "serve": "webpack serve --port 9000",
+    "build": "webpack --mode production"
   },
   "dependencies": {
-    "single-spa": "^4.0.1",
-    "systemjs": "^0.21.4",
-    "zone.js": "^0.8.26"
+    "single-spa": "^6.0.3",
+    "systemjs": "^6.15.1"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^14.0.0"
   }
 }

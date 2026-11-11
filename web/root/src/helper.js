@@ -1,15 +1,12 @@
-import * as singleSpa from 'single-spa';
+import { registerApplication } from 'single-spa';
 
-export function hashPrefix(prefix) {
-  return function(location) {
-    return location.hash.startsWith(`#${prefix}`);
-  };
-}
+export const hashPrefix = (prefix) => (location) =>
+  location.hash.startsWith(`#${prefix}`);
 
-export async function loadApp(name, hash, appURL) {
-  singleSpa.registerApplication(
+export function loadApp(name, hash, appURL) {
+  registerApplication({
     name,
-    () => SystemJS.import(appURL),
-    hashPrefix(hash)
-  );
+    app: () => System.import(appURL),
+    activeWhen: hashPrefix(hash)
+  });
 }

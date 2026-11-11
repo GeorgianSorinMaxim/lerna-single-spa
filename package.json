@@ -1,26 +1,20 @@
 {
+  "name": "single-spa-portal-example",
   "private": true,
+  "engines": { "node": ">=20" },
   "workspaces": ["web/*"],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "watch:portal": "lerna run watch:portal --stream --concurrency 6",
-    "portal": "lerna run serve --stream",
-    "update-version": "lerna publish --skip-git --skip-npm --force-publish '*'"
+    "watch:portal": "npm run watch:portal -w app1",
+    "portal": "npm run serve -w root",
+    "build": "npm run build --workspaces --if-present"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-syntax-export-extensions": "^7.0.0-beta.32",
-    "@babel/plugin-transform-modules-commonjs": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/preset-stage-0": "^7.0.0",
-    "@babel/runtime": "^7.0.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-loader": "^7.1.4",
-    "lerna": "^3.0.4"
-  },
-  "name": "single-spa-portal-example"
+    "@babel/core": "^8.1.0",
+    "@babel/preset-env": "^8.0.7",
+    "@babel/preset-react": "^8.0.1",
+    "babel-loader": "^10.1.1",
+    "webpack": "^5.112.2",
+    "webpack-cli": "^7.3.1",
+    "webpack-dev-server": "^6.1.0"
+  }
 }

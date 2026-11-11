@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "watch:portal": "webpack serve --port 9001",
+    "watch:portal": "webpack serve --mode development --port 9001",
     "build": "webpack --mode production"
   },
   "dependencies": {

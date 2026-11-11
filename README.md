@@ -1,5 +1,7 @@
 # `single-spa` inside `lerna` monorepo experiment
 
+![The root app rendering app1](docs/screenshot.png)
+
 ## Run:
 
 - Install the dependencies
